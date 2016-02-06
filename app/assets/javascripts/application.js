@@ -16,5 +16,6 @@
 //= require turbolinks
 //= require angular
 //= require angular-ui-bootstrap
+//= require angular-ui-bootstrap-tpls
 //= require angular_definition
 //= require carousel

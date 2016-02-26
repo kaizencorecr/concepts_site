@@ -1,12 +1,4 @@
-<div ng-controller="CarouselDemoCtrl" id="slides_control">
-  <div>
-    <uib-carousel interval="myInterval">
-      <uib-slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}">
-        <div class="carousel-caption">
-          <h4>Slide {{$index+1}}</h4>
-        </div>
-      </uib-slide>
-    </uib-carousel>
-  </div>
+<div>
+  <%= render partial: 'home/carousel'%>
+  <%= render partial: 'home/describe_organization' %>
 </div>

@@ -18,6 +18,5 @@
 //= require angular-ui-bootstrap
 //= require angular-ui-bootstrap-tpls
 //= require angular_definition
-//= require carousel
 //= require hovers
 //= require snap.svg-min

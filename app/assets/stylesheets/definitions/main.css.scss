@@ -14,7 +14,7 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
+  text-shadow: none; /* Prevent inheritence from 'body' */
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -49,19 +49,19 @@ body {
   vertical-align: top;
 }
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 
 /*
  * Header
  */
+.masthead{
+  z-index: 1;
+  background-color: #333;
+}
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -110,7 +110,7 @@ body {
  */
 
 .cover {
-  padding: 0 20px;
+  margin-top: 120px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -137,13 +137,15 @@ body {
   }
 }
 
+/*
+ * Social media
+ */
+
 .social-media-management{
   color: #fff; /* IE8 proofing */
   color: rgb(255,255,255);
   height: 90px;
   width: 100%;
-  position: fixed;
-  left: 0;
   bottom: 60px;
   padding: 10px 0;
 
@@ -163,7 +165,20 @@ body {
       text-align: center;
     }
   }
+}
 
+/*
+ * Info subtitle / Info body
+ */
+
+.info-subtitle{
+  color: rgb(247, 147, 29);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.info-body-text{
+  color: #666666;
 }
 
 
@@ -177,11 +192,7 @@ body {
     position: fixed;
     top: 0;
   }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -197,7 +208,7 @@ body {
 @media (min-width: 992px) {
   .masthead,
   .cover-container {
-    width: 700px;
+    width: 100%;
   }
 }
 

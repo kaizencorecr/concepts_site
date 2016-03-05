@@ -1,0 +1,21 @@
+<div class="blog">
+	<%= render 'layouts/sectionBanner' %>
+	<!-- Main Content -->
+	<div class="container">
+			<div class="row">
+					<div class="col-md-9">
+							<%= render 'blog/sections/post_preview'%>
+							<hr>
+							<%= render 'blog/sections/post_preview'%>
+							<hr>
+							<%= render 'blog/sections/pager'%>
+					</div>
+		<!-- Blog Sidebar Widgets Column -->
+					<div class="col-md-3">
+							<%= render 'blog/sections/search'%>
+							<%= render 'blog/sections/categories'%>
+							<%= render 'blog/sections/other_section'%>
+					</div>
+			</div>
+	</div>
+</div>

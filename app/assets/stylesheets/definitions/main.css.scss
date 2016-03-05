@@ -9,17 +9,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from 'body' */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
 /*
  * Base structure
  */
@@ -27,12 +16,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  align-items: flex-start;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -52,7 +41,6 @@ body {
   margin-right: 0;
   margin-left: 0;
 }
-
 
 /*
  * Header
@@ -110,7 +98,7 @@ body {
  */
 
 .cover {
-  margin-top: 120px;
+  margin-top: 0px;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -211,4 +199,3 @@ body {
     width: 100%;
   }
 }
-

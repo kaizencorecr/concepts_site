@@ -20,3 +20,4 @@
 //= require angular_definition
 //= require hovers
 //= require snap.svg-min
+//= require grayscale

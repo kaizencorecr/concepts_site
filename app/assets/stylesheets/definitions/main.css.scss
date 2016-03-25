@@ -27,12 +27,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -58,13 +56,33 @@ body {
  * Header
  */
 .masthead{
-  z-index: 1;
-  background-color: #333;
+  z-index: 1000;
+  background-color: transparent;
+
+  .navbar-default{
+    margin-bottom: 0;
+    height: 100px;
+    background-color: transparent;
+    border: 0;
+
+    .navbar-collapse{
+      border: 0;
+      padding: 26px 50px 0px 0px;
+    }
+
+    .img-responsive{
+      max-height: 100px;
+    }
+
+    .navbar-nav > li > a{
+      color: white !important;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 5px 15px;
 }
 
 .masthead-nav > li {
@@ -84,15 +102,15 @@ body {
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
   border-bottom-color: #00A79D;
   border-bottom-color: rgb(0,167,157);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
+  color: #fff !important;
   border-bottom-color: #00A79D;
+  background-color: transparent !important;
 }
 
 @media (min-width: 768px) {
@@ -110,7 +128,7 @@ body {
  */
 
 .cover {
-  margin-top: 120px;
+
 }
 .cover .btn-lg {
   padding: 10px 20px;

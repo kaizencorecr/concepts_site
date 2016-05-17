@@ -22,3 +22,4 @@
 //= require snap.svg-min
 //= require grayscale
 //= require about
+//= require clean-blog.min

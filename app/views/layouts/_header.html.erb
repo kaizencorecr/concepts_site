@@ -20,10 +20,10 @@
          otro elemento que se pueda ocultar al minimizar la barra -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav masthead-nav">
-        <li class="active"><a href="#">INICIO</a></li>
+        <li class="active"><%= link_to "INICIO", root_path %></li>
         <li><a href="#">PROYECTOS</a></li>
         <li><%= link_to "CONÓZCANOS", about_path %></li>
-        <li><a href="#">BLOG</a></li>
+        <li><%= link_to "BLOG", blog_path %></li>
       </ul>
 
     </div>

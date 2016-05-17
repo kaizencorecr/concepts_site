@@ -1,0 +1,320 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from 'body' */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  align-items: flex-start;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*
+ * Header
+ */
+.masthead{
+  z-index: 1000;
+  background-color: transparent;
+
+  .navbar-default{
+    margin-bottom: 0;
+    height: 100px;
+    background-color: transparent;
+    border: 0;
+
+    .navbar-collapse{
+      border: 0;
+      padding: 26px 50px 0px 0px;
+    }
+
+    .img-responsive{
+      max-height: 100px;
+    }
+
+    .navbar-nav > li > a{
+      color: white !important;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.masthead-brand {
+  padding: 5px 15px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgb(255,255,255);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  border-bottom-color: #00A79D;
+  border-bottom-color: rgb(0,167,157);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff !important;
+  border-bottom-color: #00A79D;
+  background-color: transparent !important;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+#history{
+  color: black;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #fff; /* IE8 proofing */
+  color: rgb(255,255,255);
+  background-color: #000;
+  height: 60px;
+  width: 100%;
+
+  .copyright-text{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: pre;
+  }
+}
+
+/*
+ * Social media
+ */
+
+.social-media-management{
+  background-image: image-url("desk-laptop-notebook-pen-large.jpg");
+  color: #fff; /* IE8 proofing */
+  color: rgb(255,255,255);
+  height: 200px;
+  width: 100%;
+  bottom: 60px;
+  padding: 10px 0;
+  background-position: 0px -470px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+
+  .shadowed-component{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    position: absolute;
+    top: 0;
+  }
+
+  .social-media-text{
+    font-size: 15pt;
+    position: absolute;
+    z-index: 100;
+    margin-bottom:10px;
+    top: 20%;
+    left: 41.5%;
+  }
+
+  .social-networks{
+    position: absolute;
+    top: 40%;
+    left: 44%;
+    z-index: 100;
+    .icon-container{
+      z-index: 100;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      display: inline-block;
+      height: 40px;
+      width: 41px;
+      padding: 10px 12px;
+
+      .social-media-icon{
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*
+ * Info subtitle / Info body
+ */
+
+.info-subtitle{
+  color: #DB9600;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.info-body-text{
+  color: #666666;
+}
+
+.concepts-tasks, .concepts-alliances {
+  padding: 30px 50px;
+  .section-header {
+    h4 {
+      color: #434142;
+      font-weight: bold;
+      font-size: 28pt;
+    }
+    p {
+      color: #86858A;
+      font-style: italic;
+      font-size: 15pt;
+    }
+  }
+}
+
+.concepts-tasks{
+  .tasks{
+    margin-top: 20px;
+    padding: 0 10px;
+    .task{
+      text-align: center;
+      .task-icon{
+        color: white;
+        border-radius: 50%;
+        border: 2px solid gray;
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        padding: 9px 8px;
+        .icon-container{
+          background-color: #DB9600;
+          border-radius: 50%;
+          height: 60px;
+          width: 60px;
+          padding: 10px 10px 0px 5px;
+          font-size: 20pt;
+        }
+      }
+      h3{
+        color: #434142;
+        font-weight: bold;
+        font-size: 15pt;
+        text-transform: uppercase;
+      }
+      p{
+        color: #86858A;
+        font-size: 14pt;
+      }
+    }
+  }
+}
+
+.concepts-alliances{
+  color: #86858A;
+  .alliance{
+    height: 100px;
+    padding: 20px;
+  }
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .cover-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1 @@
+@app = angular.module('concepts-app', [ 'ui.bootstrap' ])

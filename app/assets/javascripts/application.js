@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
+//= require angular
+//= require angular-ui-bootstrap
+//= require angular-ui-bootstrap-tpls
+//= require angular_definition
+//= require hovers
+//= require snap.svg-min
+//= require grayscale
+//= require about
+//= require clean-blog.min

@@ -1,0 +1,49 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators hide">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag('people_apple_iphone_writing_large.jpg') %>
+      <div class="shadowed-component"></div>
+      <div class="concepts-info">
+        <h4>¿QUIÉNES SOMOS?</h4>
+        <p>
+          Somos un equipo colaborativo con iniciativas que impulsan y motivan el emprendimiento e innovación en Costa Rica.
+          Un proyecto de la Asociación para la Innovación y Desarrollo del Conocimiento (AIDECO).
+        </p>
+        <%= link_to("Conózcanos",'#', class: 'btn btn-default base-btn aqua') %>
+        <%= link_to("AIDECO",'#', class: 'btn btn-default base-btn orange') %>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/800x400" alt="...">
+      <div class="shadowed-component"></div>
+      <div class="carousel-caption">
+        <h2 class="carousel-caption-title">Titular de nota o evento 1</h2>
+        <h2 class="carousel-caption-description">Descripción de la nota o evento 1</h2>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/800x400" alt="...">
+      <div class="shadowed-component"></div>
+      <div class="carousel-caption">
+        <h2 class="carousel-caption-title">Titular de nota o evento 1</h2>
+        <h2 class="carousel-caption-description">Descripción de la nota o evento 1</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>

@@ -1,0 +1,22 @@
+
+.base-btn{
+  font-size: 14pt;
+  font-weight: bold;
+  padding: 10px 15px;
+  width: 180px;
+  text-transform: uppercase;
+  color: white !important;
+  border: 0 !important;
+  margin: 10px;
+}
+
+.base-btn.orange{
+  background-color: #DB9600;
+}
+.base-btn.aqua{
+  background-color: #5EA099;
+}
+.base-btn.white{
+  background-color: white;
+  color: #DB9600 !important;
+}

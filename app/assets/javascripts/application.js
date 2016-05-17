@@ -21,3 +21,4 @@
 //= require hovers
 //= require snap.svg-min
 //= require grayscale
+//= require about

@@ -18,5 +18,3 @@
 //= require angular-ui-bootstrap
 //= require angular-ui-bootstrap-tpls
 //= require angular_definition
-//= require bootstrap.min
-//= require clean-blog.min

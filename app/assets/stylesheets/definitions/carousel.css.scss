@@ -13,35 +13,67 @@
 /* ------------------- Carousel Styling ------------------- */
 
 .carousel-inner {
-  border-radius: 15px;
-}
+  position:relative;
 
-.carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
-  width: 60%;
+  .item{
+    height: 800px;
 
-  .carousel-caption-title{
-    height: 70px;
-    font-size: 45px;
-    vertical-align: middle;
-    line-height: 70px;
-    font-weight: bolder;
-    background-color: #00A79D;
-    padding-left: 10px;
-  }
+    .shadowed-component{
+      height: 800px;
+      width: 100%;
+      background-color: rgba(0,0,0, 0.6);
+      z-index: 10;
+      position: absolute;
+      top: 0
+    }
 
-  .carousel-caption-description{
-    background-color: rgb(247, 147, 29);
-    font-size: 30px;
-    height: 40px;
-    padding-left: 10px;
+    .concepts-info{
+      position: absolute;
+      text-align: center;
+      height: 3px;
+      width: 50%;
+      z-index: 15;
+      top: 40%;
+      left: 25%;
+
+      h4{
+        font-size: 46pt;
+        font-weight: bold;
+      }
+
+      p{
+        font-size: 19px;
+      }
+    }
+
+    .carousel-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      padding: 0 0 10px 25px;
+      color: #fff;
+      text-align: left;
+      width: 60%;
+
+      .carousel-caption-title{
+        height: 70px;
+        font-size: 45px;
+        vertical-align: middle;
+        line-height: 70px;
+        font-weight: bolder;
+        background-color: #00A79D;
+        padding-left: 10px;
+      }
+
+      .carousel-caption-description{
+        background-color: rgb(247, 147, 29);
+        font-size: 30px;
+        height: 40px;
+        padding-left: 10px;
+      }
+    }
   }
 }
 
